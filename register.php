@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Bon Voyage - Reservation Form</title>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 </head>
 <body>
 	<div class="judul">		
@@ -38,8 +39,8 @@
     			</td>	
     		</tr>
             <tr>
-            	<td>Pick Up Time</td>
-            	<td><input type="datetime-local" name="pickup_time" required></td>
+            	<td>Arrival Date</td>
+            	<td><input type="Date" name="arrival_date" required></td>
             </tr>
             <tr>
             	<td>Inn Location</td>
@@ -56,11 +57,11 @@
             <tr>
             	<td>Payment Method</td>
             	<td>
-     				<select name="payment_method" required>
+     				<select name="phoneCode" required>
       					<option selected hidden value="">Select Payment</option>
-      					<option value="PPL">Paypal</option>
-     					<option value="MDR">Mandiri</option>
-     					<option value="OVO">Ovo</option>
+      					<option value="paypal">Paypal</option>
+     					<option value="mandiri">Mandiri</option>
+     					<option value="ovo">Ovo</option>
      				</select>
      			</td>
             </tr>

@@ -44,8 +44,15 @@
 					</div>
                     </br>
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn"> <a href=" " class="login100-form-btn">
+						<button class="login100-form-btn"> <a href="" class="login100-form-btn">
 							Status Details
+						</a></button>
+					</div>
+                    
+					</br>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn"> <a href="" class="login100-form-btn">
+							Statistics
 						</a></button>
 					</div>
 					

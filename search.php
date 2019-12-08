@@ -2,7 +2,7 @@
 
 if(isset($_POST['search'])){
 	$valueToSearch = $_POST['valueToSearch'];
-	$query = "SELECT * FROM booking_details WHERE email_fk = '$valueToSearch'";
+	$query = "SELECT bk.*, pc.* FROM booking_details as bk, package as pc WHERE bk.email_fk = '$valueToSearch' AND bk.package_id_fk = pc.package_id";
 	$search_result = filterTable($query);
 
 } else{
@@ -39,18 +39,15 @@ function filterTable($query){
 			<tr>
 				<th>book number</th>
 				<th>book made</th>
-				<th>destination</th>
-				<th>package</th>
 				<th>pick up time</th>
+				<th>package name</th>
 			</tr>
 			<?php while($row = mysqli_fetch_array($search_result)):?>
 			<tr>
 				<td><?php echo $row['book_number'];?></td>
 				<td><?php echo $row['book_date'];?></td>
-				<td><?php echo $row['destination'];?></td>
-				<!-- package ini bisa nested, yg show nama package -->
-				<td><?php echo $row['package_id_fk'];?></td>
 				<td><?php echo  $row['pickup_time'];?></td>
+				<td><?php echo $row['package_name'];?></td>
  			</tr>
  		<?php endwhile;?>
 		</table>

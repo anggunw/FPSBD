@@ -41,6 +41,7 @@ function filterTable($query){
 				<th>book made</th>
 				<th>pick up time</th>
 				<th>package name</th>
+				<th>destination</th>
 			</tr>
 			<?php while($row = mysqli_fetch_array($search_result)):?>
 			<tr>
@@ -48,6 +49,9 @@ function filterTable($query){
 				<td><?php echo $row['book_date'];?></td>
 				<td><?php echo  $row['pickup_time'];?></td>
 				<td><?php echo $row['package_name'];?></td>
+				<td><?php 
+						echo $row['destination'] === 'S'? 'Surabaya' : 'Malang' ?>
+				</td>
  			</tr>
  		<?php endwhile;?>
 		</table>

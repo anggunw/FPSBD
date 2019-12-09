@@ -95,6 +95,7 @@
   <div class="card-body text-primary">
     <h5 class="card-title">1 Day</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">Rp 123</h5>
 	<input type="radio" name="package" value = "1" required/>  
 	</label>
 </div>
@@ -105,6 +106,7 @@
   <div class="card-body text-primary">
     <h5 class="card-title">2 Days</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">Rp 200</h5>
 	<input type="radio" name="package" value = "2" required/>  
 	</label>
 </div>
@@ -116,13 +118,14 @@
   <div class="card-body text-primary">
     <h5 class="card-title">3 Days</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">Rp 300</h5>
 	<input type="radio" name="package" value = "3" required/>  
 </label>
 </div>
 </div>
 
   </fieldset>
-			<button type="submit">Next</button>
+			<button type="submit">Book Now</button>
       
 	</form>
 </body>

@@ -1,5 +1,5 @@
 <?php
-	$query = "SELECT book_number, name, destination, package_name, date(pickup_time) FROM booking_details, personal_identity, package WHERE booking_details.email_fk = personal_identity.email AND booking_details.package_id_fk = package.package_id AND LOWER(personal_identity.name) LIKE '%lisa%' OR LOWER(personal_identity.name) LIKE '%shofi%' OR LOWER(personal_identity.name) LIKE '%anggun%'";
+	$query = "SELECT book_number, name, destination, package_name, date(pickup_time) FROM booking_details, personal_identity, package WHERE booking_details.email_fk = personal_identity.email AND booking_details.package_id_fk = package.package_id AND (LOWER(personal_identity.name) LIKE 'lisa%' OR LOWER(personal_identity.name) LIKE 'shofi%' OR LOWER(personal_identity.name) LIKE 'anggun%') ORDER BY book_number ASC";
 	$result = showRes($query);
 
 function showRes($query){

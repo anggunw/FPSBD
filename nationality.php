@@ -45,7 +45,9 @@ function filterTable($query){
 			<?php while($row = mysqli_fetch_array($search_result)):?>
 			<tr>
 				<td><?php echo $row['book_date'];?></td>
-				<td><?php echo $row['destination'];?></td>
+				<td><?php 
+						echo $row['destination'] === 'S'? 'Surabaya' : 'Malang' ?>
+				</td>
 				<td><?php echo $row['package_id_fk'];?></td>
  			</tr>
  		<?php endwhile;?>

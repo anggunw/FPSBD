@@ -8,6 +8,15 @@
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/registration.css">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  label + label {
+    margin-left: 50px;
+}
+</style>
 </head>
 <body>
 	<form action="register-aksi.php" method="post" enctype="multipart/form-data">		
@@ -69,12 +78,51 @@
       					<option selected hidden value="">Select Payment</option>
       					<option value="PPL">Paypal</option>
      					<option value="MDR">Mandiri</option>
-     					<option value="OVO">Ovo</option>
+						 <option value="OVO">Ovo</option>
+						 <br>
      				</select>
      			</td>
 			</tr>
-			</fieldset>
-			<button type="submit">Sign Up</button>
+
+</fieldset>
+  <br>
+<fieldset>
+<legend><span class="number">3</span>Package</legend>
+
+<label>
+<div class="card border-primary mb-3" style="max-width: 36rem;">
+  <div class="card-header">Package 1</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">1 Day</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	<input type="radio" name="package" value = "1" required/>  
+	</label>
+</div>
+</div>
+<label>
+<div class="card border-primary mb-3" style="max-width: 36rem;">
+  <div class="card-header">Package 2</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">2 Days</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	<input type="radio" name="package" value = "2" required/>  
+	</label>
+</div>
+</div>
+
+<label>
+<div class="card border-primary mb-3" style="max-width: 36rem;">
+  <div class="card-header">Package 3</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">3 Days</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	<input type="radio" name="package" value = "3" required/>  
+</label>
+</div>
+</div>
+
+  </fieldset>
+			<button type="submit">Next</button>
       
 	</form>
 </body>

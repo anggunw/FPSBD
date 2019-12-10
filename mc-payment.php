@@ -1,5 +1,5 @@
 <?php
-$query = "SELECT payment_method, COUNT(payment_method) AS total_payment FROM payment, booking_details WHERE booking_details.payment_id_fk = payment.payment_id GROUP BY payment_method";
+$query = "SELECT payment_method, COUNT(payment_method) AS total_payment FROM payment, booking_details WHERE booking_details.payment_id_fk = payment.payment_id GROUP BY payment_method ORDER BY COUNT(payment_method) DESC";
 	$search_result = filterTable($query);
 function filterTable($query){
 	$connect = mysqli_connect("localhost", "root", "", "bonvoyage");

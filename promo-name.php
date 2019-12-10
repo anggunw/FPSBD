@@ -25,8 +25,8 @@ function showRes($query){
 	</style>
 </head>
 <body>
-	Dibawah ini adalah list reservasi yang mendapatkan promo opening 10% cashback dengan nama pemesan "lisa", "shofi" atau "anggun"<br>
-	Silahkan tunjukkan halaman ini dan KTP saat hari perjalanan<br>
+	This is the list of reservation that got 10% opening promo cashback with the name "Lisa", "Shofi" or "Anggun"<br>
+	Please show this page and your identity card on your travel day<br>
 	<table>
 		<tr>
 			<th>Book Number</th>

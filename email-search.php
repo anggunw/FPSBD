@@ -2,7 +2,7 @@
 
 if(isset($_POST['search'])){
 	$valueToSearch = $_POST['valueToSearch'];
-	$query = "SELECT bk.*, pc.* FROM booking_details as bk, package as pc WHERE bk.email_fk = '$valueToSearch' AND bk.package_id_fk = pc.package_id";
+	$query = "SELECT book_number, book_date, pickup_time, package_name, destination FROM booking_details, package WHERE booking_details.email_fk = '$valueToSearch' AND booking_details.package_id_fk = package.package_id";
 	$search_result = filterTable($query);
 
 } else{

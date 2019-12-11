@@ -37,14 +37,14 @@ function filterTable($query){
 	</style>
 </head>
 <body>
+	<form action="receipt.php" method="post">
 	<div class="title">
 		<h1>Receipt</h1>
 	</div>
-	<form action="receipt.php" method="post">
-		<input type="text" name="valueToSearch1" placeholder="Please input your e-mail"><br><br>
-		<input type="text" name="valueToSearch2" placeholder="Please input your book number"><br><br>
+		<input type="text" name="valueToSearch1" placeholder="Please input your e-mail"><br>
+		<input type="text" name="valueToSearch2" placeholder="Please input your book number"><br>
 		<button type="submit" name="search" value="Search">Search</button>
-		<table>
+		<table align="center">
 			<?php while($row = mysqli_fetch_array($search_result)):?>
 			<tr>
 				<td>Book Number</td>
@@ -84,7 +84,7 @@ function filterTable($query){
 			</tr>		
 
  		<?php endwhile;?>
-		</table>
+		</table><br>
 
 	<div class="container-login100-form-btn">
 		<button class="login100-form-btn">

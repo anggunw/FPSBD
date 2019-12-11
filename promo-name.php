@@ -17,6 +17,7 @@ function showRes($query){
 <html>
 <head>
 	<title>Opening Promo</title>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<style>
 		table, tr, th, td
 		{

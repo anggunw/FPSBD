@@ -13,22 +13,15 @@
 	<div class="title">
 		<h1>Bon Voyage Statistics</h1>
 	</div>
-	<form action="memorable-cust.php" method="post">
+	<form action="" method="post">
 		<div class="container-login100-form-btn">
 		<button class="login100-form-btn">
-				<a href="memorable-cust.php" class="login100-form-btn">Our Memorable Customers</a>
+				<a href="promo-name.php" class="login100-form-btn">Special Promo</a>
 		</button>
 		</div>
-
 		<div class="container-login100-form-btn">
 		<button class="login100-form-btn">
-				<a href="mc-payment.php" class="login100-form-btn">Most Chosen Payment Method</a>
-		</button>
-		</div>
-
-		<div class="container-login100-form-btn">
-		<button class="login100-form-btn">
-				<a href="mc-package.php" class="login100-form-btn">Most Chosen Package</a>
+				<a href="mc-package.php" class="login100-form-btn">Customer's Favourite Package</a>
 		</button>
 		</div>
 	</form>

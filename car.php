@@ -24,6 +24,7 @@ function filterTable($query){
 <html>
 <head>
 	<title>Bon Voyage Car Search</title>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<style>
 		table, tr, th, td
 		{

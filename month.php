@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Transaction per Month</title>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<style>
 		table, tr, th, td
 		{

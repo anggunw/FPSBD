@@ -77,10 +77,11 @@ function showResult($query){
       </tr>
     <?php endwhile;?>
     </table>
-    <br>Please pay the bills to Bon Voyage according to the payment method you've chosen </br>
-    <br>Paypal 5064 231 432 654</br>
-    <br>Mandiri 0100 430 876 293</br>
-    <br>Ovo 0896 7890 3214</br>
+    <br>Please pay the bills to Bon Voyage according to the payment method you've chosen<br>
+    Dont forget to input your booking number to "Book Number" when paying<br>
+    Paypal 5064 231 432 654<br>
+    Mandiri 0100 430 876 293<br>
+    Ovo 0896 7890 3214<br>
 
   <div class="container-login100-form-btn">
     <button class="login100-form-btn">

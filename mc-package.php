@@ -35,7 +35,7 @@ function filterTable($query){
 			<?php while($row = mysqli_fetch_array($search_result)):?>
 			<tr>
 				<td><?php echo $row['package_name'];?></td>
-				<td><?php echo $row['total_package'];?></td>
+				<td align="center"><?php echo $row['total_package'];?></td>
  			</tr>
  		<?php endwhile;?>
 		</table>	

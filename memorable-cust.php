@@ -1,5 +1,5 @@
 <?php
-$query = "SELECT name, package_name, destination, total FROM booking_details, personal_identity, package WHERE booking_details.email_fk = personal_identity.email AND booking_details.package_id_fk = package.package_id AND total > (SELECT AVG(total) FROM booking_details)";
+$query = "SELECT name, package_name, destination, total FROM booking_details, personal_identity, package WHERE booking_details.email_fk = personal_identity.email AND booking_details.package_id_fk = package.package_id AND total > (SELECT AVG(total) FROM booking_details) ORDER BY total";
 	$search_result = filterTable($query);
 function filterTable($query){
 	$connect = mysqli_connect("localhost", "root", "", "bonvoyage");

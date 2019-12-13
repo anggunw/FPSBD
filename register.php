@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-	<form action="register-aksi.php" method="post" enctype="multipart/form-data">		
+	<form action="register-confirm.php" method="post" enctype="multipart/form-data">		
 
 		<h1>Bon Voyage Reservation Form</h1>
 
@@ -47,8 +47,8 @@
 			<tr>
 				<td>Destination: </td>
 				<td>
-					<input type="radio" name="destination" value="s" required>Surabaya
-					<input type="radio" name="destination" value="m" required>Malang
+					<input type="radio" name="destination" value="S" required>Surabaya
+					<input type="radio" name="destination" value="M" required>Malang
     			</td>	
 			</tr>
 			<br>
@@ -94,9 +94,8 @@
   <div class="card-header">Package 1</div>
   <div class="card-body text-primary">
     <h5 class="card-title">1 Day</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <h5 class="card-title">Rp 123</h5>
-	<input type="radio" name="package" value = "1" required/>  
+    <p class="card-text">Rp. 200.000/Car (12 Hour)</p>
+	<input type="radio" name="package" value = "01" required/>  
 	</label>
 </div>
 </div>
@@ -105,9 +104,8 @@
   <div class="card-header">Package 2</div>
   <div class="card-body text-primary">
     <h5 class="card-title">2 Days</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <h5 class="card-title">Rp 200</h5>
-	<input type="radio" name="package" value = "2" required/>  
+    <p class="card-text">Rp. 300.000/Car (12 Hour)</p>
+	<input type="radio" name="package" value = "02" required/>  
 	</label>
 </div>
 </div>
@@ -117,15 +115,14 @@
   <div class="card-header">Package 3</div>
   <div class="card-body text-primary">
     <h5 class="card-title">3 Days</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <h5 class="card-title">Rp 300</h5>
-	<input type="radio" name="package" value = "3" required/>  
+    <p class="card-text">Rp. 400.000/Car (12 Hour)</p>
+	<input type="radio" name="package" value = "03" required/>  
 </label>
 </div>
 </div>
 
   </fieldset>
-			<button type="submit">Book Now</button>
+			<button type="submit">Next</button>
       
 	</form>
 </body>
